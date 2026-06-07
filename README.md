@@ -131,6 +131,18 @@ All settings live in `.env` (git-ignored; see `.env.example`):
 - **Extraction looks generic** → no `OPENAI_API_KEY` (or `ANTHROPIC_API_KEY`) set, so the deterministic fallback ran. Add a key for real PDF understanding.
 - **`npm run test:engine` fails on older Node** → requires Node 18.18+/20+ for `--experimental-strip-types`.
 
+## Team
+
+**Project X**
+
+- Ivan Komarov — team lead
+- Alexander Reinicke — member
+
+## Submission
+
+- Track: **notarity** · Case partner: **notarity**
+- Submitted to the START Hack Vienna '26 GitHub organisation.
+
 ## License
 
 MIT — see [`LICENSE`](./LICENSE).

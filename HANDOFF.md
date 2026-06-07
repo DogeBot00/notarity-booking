@@ -46,11 +46,11 @@ interpretation, conditional logic, validity, and submission. Keep that boundary.
 1. `npm install`, then `npm run build` (or `npx tsc --noEmit`). Fix type/build errors.
    The `.tsx` components were never compiled — this is the most likely place for fixes.
 2. `cp .env.example .env`. Set `NOTARITY_BASIC_USER=START`,
-   `NOTARITY_BASIC_PASS=notarity-challenge-2026`. Keep `NOTARITY_DEBUG=true`.
+   `NOTARITY_BASIC_PASS=` to the value (shared on the notarity track Discord). Keep `NOTARITY_DEBUG=true`.
    Optionally set `ANTHROPIC_API_KEY` for real document understanding.
 3. `npm run dev`. Confirm the banner says "Connected to notarity staging" (not "Demo
    mode"). If it says demo mode, the API call failed — debug `lib/notarity/client.ts`.
-4. **Confirm API auth**: run `curl -u START:notarity-challenge-2026
+4. **Confirm API auth**: run `curl -u START:<password (shared on the notarity track Discord)>
    'https://staging-api.notarity.com/booking-form/slug?slug=start-vienna-hackathon'`.
    If the API needs no auth or a different scheme, adjust `client.ts` accordingly.
 5. **Reconcile the live schema**: pretty-print the real `GET /booking-form/slug`
